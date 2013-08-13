@@ -1,0 +1,147 @@
+---
+layout: post
+author: Jorge Aranda and Greg Wilson
+title: "Review: The Essence of Software Engineering"
+date: 2013-08-12
+time: 09:00:00
+categories: [Book Reviews]
+---
+<p>
+  Ivar Jacobson, Pan-Wei Ng, Paul E. McMahon, Ian Spence, and Svante Lidman:
+  <cite>The Essence of Software Engineering: Applying the SEMAT Kernel</cite>.
+  Addison-Wesley Professional, 2013, 978-0321885951.
+</p>
+
+<p>
+  SEMAT started almost four years ago
+  as a call to action to refound software engineering on a strong theoretical and empirical basis,
+  and to move beyond fads and petty methodological wars
+  to embrace a "kernel" of widely agreed elements.
+  It had an impressive list of signatories,
+  and SEMAT contributors have since sent a submission to the OMG
+  describing what they think the essence of software engineering is,
+  which they hope will become
+  an <a href="http://www.omg.org/">Object Management Group</a> (OMG) standard this year.
+</p>
+
+<p>
+  <cite>The Essence of Software Engineering</cite>,
+  by Jacobson, Ng, McMahon, Spence, and Lidman,
+  is meant to be a practitioner-oriented book describing the SEMAT kernel.
+  Unfortunately,
+  the "kernel" described in the book throws all of the SEMAT goals out of the window,
+  and instead serves as a perfect example of everything SEMAT was supposed to fix.
+</p>
+
+<p>
+  First,
+  where SEMAT wanted to build upon a strong theoretical foundation,
+  this kernel is not informed by any established theories from any discipline.
+  It does not even articulate any theories of software engineering,
+  but instead claims that that will be handled separately by the Theory Working Group.
+  (Tellingly, the <a href="http://semat.org/?page_id=956">Theory Track page</a> in the SEMAT website is currently blank.)
+</p>
+
+<p>
+  Second,
+  where SEMAT wanted to build upon "credible experimental evaluation",
+  this kernel does not seem to be informed by any empirical findings.
+  Instead,
+  the only "evidence" put forward to back up its recommendation
+  are the anecdotal experiences of its authors.
+  At a time when empirical software engineering is stronger than ever,
+  and its links to developments in other fields are strengthening and being properly acknowledged,
+  it is frankly nonsensical for someone to claim
+  that they have distilled software engineering's "essence"
+  while completely ignoring the hundreds of empirical studies
+  that have been conducted in the past two decades.
+</p>
+
+<p>
+  Finally,
+  and perhaps most damningly,
+  where SEMAT's stated goal was to move away from fads,
+  this kernel promotes a methodology developed by a single consulting firm
+  (that of the book's first author),
+  along with idiosyncratic terms like "alphas"
+  and some slideshow-friendly visual aids
+  whose semantics are even less well defined than those of UML 1.0.
+</p>
+
+<p>
+  But is this "kernel" any good?
+  It's impossible to tell in the absence of any objective evaluation,
+  but the signs aren't hopeful.
+  For a start,
+  it ignores everything that's actually problematic about
+  constructing a universal core for software development.
+  Anything deserving of that name should work for Microsoft as well as for open source,
+  for IBM as well as for a tiny startup,
+  for grad students writing scripts to process their data
+  as well as for videogame companies, defense contractors, and OS developers.
+  That's simply not the case here.
+</p>
+
+<p>
+  As an example,
+  SEMAT wants development teams to keep track of several areas of concern&mdash;the aforementioned alphas&mdash;such as
+  stakeholders, requirements, and systems.
+  At any time,
+  each alpha is in some particular state
+  (e.g.,
+  requirements can be "conceived", "bounded", "coherent", "acceptable", "addressed", and finally "fulfilled"),
+  and this state changes as the project progresses.
+  That may sound nice in the boardroom,
+  but as many researchers have reported,
+  this is not the way requirements progress for many successful software groups.
+  Under some conditions requirements can be exploratory and unarticulated,
+  and projects can still succeed&mdash;not despite this fluidity,
+  but because of it.
+</p>
+
+<p>
+  What's more,
+  the whole notion of concrete states is flawed.
+  In reality,
+  the state of many parts of a project can be fuzzy,
+  there can be valid disagreement as to what state something is in,
+  and disagreement as well about what it means to be in one state or another [<a href="#semat-1">1</a>].
+  <cite>Essence</cite>'s "solution"?
+  Have everyone in the room take an educated guess,
+  and move on if there is consensus.
+  If there isn't,
+  well,
+  then maybe some people in the room have not properly understood each state,
+  so they should spend some time understanding the states better and taking another vote [<a href="#semat-2">2</a>].
+</p>
+
+<p>
+  To sum up,
+  if this book actually represents the SEMAT initiative's views,
+  then that group has managed to get some well-known names,
+  and possibly the OMG,
+  to endorse yet another fad that ignores what we actually know
+  about the complexity and diversity of actual software development worldwide.
+  Today's empirical studies of software engineering are imperfect and incomplete,
+  but they're a more substantial foundation for real engineering
+  than anything you'll find in this book.
+</p>
+
+<p id="semat-1"><em>
+  [1]
+  James C. Scott's explores this idea in considerable depth
+  in his insightful book <cite>Seeing Like a State</cite>
+  (Yale University Press, 1999, 978-0300078152).
+  He shows that centralizers have frequently preferred
+  manageable uniformity to local custom and adaptation,
+  even when the latter is more productive and more robust.
+  <cite>Essence</cite>'s alphas are unlikely to cause as much suffering
+  as the forced collectivization Scott analyzes,
+  but they are unlikely to produce any better results.
+</em></p>
+
+<p id="semat-2"><em>
+  [2]
+  And people not present in the room where alpha states are being determined
+  should presumably learn not to miss meetings...
+</em></p>
